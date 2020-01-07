@@ -1,0 +1,16 @@
+{
+  "port": 3000,
+  "appName": "react-ui-nodejs-starter",
+  "protocol": "http",
+  "eureka": {
+    "enabled": "true",
+    "oauthEnabled": "true",
+    "path": "/eureka/apps/",
+    "serviceRegistryName": "aims-df-service-registry"
+  },
+  "jwtPubKey": "MIICIDANBgkqhkiG9w0BAQEFAAOCAg0AMIICCAKCAgEAnwXVxV89duda8DLbyduTlg2jBLlcnlBtlVvjCIwqQV+DVqurchp8Qu7kGBSCwbcmxzVR3MMa6IsQgFcKCR9hFap+qFpwt3iVLBKNsMuSAQzLJAK4Uwsk8q7Ah0Vj0Ws2KOFB1ErsD9X7j0RXWeVNVOeYhw01RbOVfsornZYnFeBNox3Ttg8qhvOO2jMUakyqQWGtO8d1Ns1xeCCZnUf+rwQ5qaQKH0wkkJ/gE2A+xzHZ3llfDBHR/29Tjh3lPhDxBmnGias9qGzvGh33w3IqEerG3yWO/Seb/RH4FRGEhl8Pb5nUrHqiF+ucUvC+o7TMWV+DDELI/WKxAc3xssGYUZHp+RLYx47xZ8iZEqlJ0mjUp6GoVlRg3ZHwnGuD0O/kiH0JECD2+5TlXjoJTKbFpnNzZYh9mDEsx5OcT8e2TlEZvGAZVyV4Y5VGNHJ9RGxUuONg49sJoLb6aQq7aMqJeBa1WCnIm5KIWAUwZqOdGTJJO7Uc2DdqgDdoBTcgvo7HMDTzneMV8XzLz6szQLFc2fWNje4CPNPfVSUsveX+pSsFb6EAUEw4MXI3UBjh/lK6YyEnVvvKLZbMgzM6OCX1/n7+Ojy0khFdxeKBfFzC6NlU/pqhuBxtNJ/krXmCMsHz8gydq+agfU2QQ06xBwIKudZSEgGqcV1QQS23iKkXP1cCASU=",
+  "insite": {
+    "userUrl": "https://insite.web.boeing.com/culture/service/boeingUserWebServiceJSON/bemsid?query=",
+    "imageUrl": "https://insite.web.boeing.com/culture"
+  }
+}

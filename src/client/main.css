@@ -1,0 +1,280 @@
+/*
+ *  Copyright (c) 2018 Boeing. All Rights Reserved.
+ *  Printing, copying, reproducing or electronically transmitting this
+ *  software and its associated documentation in whole or in part, in
+ *  any form whatever, is subject to the terms of the Software License
+ *  Agreement by and between The Boeing Company and LICENSEE.
+ */
+
+@import '~gemini-scrollbar/gemini-scrollbar.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(2,74,137);
+}
+
+a[href] {
+  text-decoration: none;
+}
+
+input[type=text]::-ms-clear, input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+textarea {
+  vertical-align: top;
+  overflow: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.material-icons {
+  direction: ltr;
+  display: inline-block;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.sidebar-link.active, .sidebar-link.active span.material-icons {
+  color: rgb(7,106,193) !important;
+  font-weight: bold !important;
+}
+
+.navbar {
+  position: relative;
+  height: calc(100vh - 55px);
+  padding-bottom: 55px;
+}
+
+.navbar .support-menu {
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  padding: 15px;
+  font-size: 12px;
+  color: #666;
+}
+
+.flex-outer {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-outer > li > * {
+  flex: 1 0 120px;
+  max-width: 300px;
+  margin-right: 40px;
+}
+
+.flex-outer > li.full-width > * {
+  max-width: calc(100% - 80px);
+}
+
+.flex-outer > li label + * {
+  flex: 1 0 300px;
+}
+
+.Boeing-logo-wrapper {
+  padding: 1px;
+  text-align: center;
+}
+
+.Boeing-logo {
+  display: inline-block;
+  padding-top: 19px;
+}
+
+.user-info {
+  pointer-events: none;
+  cursor: default;
+}
+
+.sidebar-link.active, .sidebar-link.active span.material-icons {
+  color: #009BDE !important;
+  font-weight: bold !important;
+}
+
+#my-incidents-checkbox {
+  margin: 0 15px 10px;
+}
+
+#text-filter {
+  width: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -4px;
+  overflow: hidden;
+  -webkit-transition: width .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out;
+  -o-transition: width .5s ease-in-out;
+  transition: width .5s ease-in-out;
+  white-space: nowrap;
+}
+
+#text-filter.open {
+  width: 180px;
+}
+
+#text-filter.open > div {
+  width: 180px !important;
+}
+
+#text-filter > div {
+  width: 0 !important;
+  font-size: 12px !important;
+  line-height: 22px !important;
+  -webkit-transition: width .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out;
+  -o-transition: width .5s ease-in-out;
+  transition: width .5s ease-in-out;
+}
+
+.filter-container {
+  padding: 0 15px;
+}
+
+.filter-container .filter-label {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.filter-container .filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-container .filter-chips .filter-chip {
+  margin: 4px 8px !important;
+}
+
+.filter-container .filter-chips .filter-chip > span {
+  font-size: 12px !important;
+  line-height: 28px !important;
+}
+
+.filter-container .filter-chips .filter-chip > svg {
+  height: 18px !important;
+  width: 18px !important;
+  margin: 5px 4px 0px -5px !important;
+}
+
+#clear-button {
+  margin-right: 4px !important;
+  vertical-align: middle;
+}
+
+#search-incidents-header {
+  width: 100%;
+  overflow: hidden;
+}
+
+table.wrap-table td {
+  white-space: normal !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  word-wrap: break-word;
+}
+
+table.sortable-table .table-header-cell {
+  cursor: pointer;
+}
+
+table.sortable-table .table-header-cell .material-icons {
+  font-size: 16px !important;
+  color: #009BDE !important;
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+table.sortable-table .table-loader {
+  margin: 100px 0;
+}
+
+#num-per-page-select {
+  display: inline-block;
+  vertical-align: middle;
+  height: 48px;
+  margin-top: -10px;
+}
+
+#pagination-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 12px;
+  text-align: center;
+}
+
+.page-button {
+  vertical-align: middle;
+}
+
+.incident-section {
+  margin: 20px 0;
+}
+
+.incident-section .incident-section-title {
+  color: #009BDE;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 8px;
+}
+
+.incident-section .incident-details-label {
+  color: #666;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.table-content-with-filters {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 800px;
+}
+
+.side-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: none;
+  width: 0;
+  -webkit-transition: width .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out;
+  -o-transition: width .5s ease-in-out;
+  transition: width .5s ease-in-out;
+}
+
+@media only screen and (min-width: 1200px) {
+  #filter-button {
+    display: none !important;
+  }
+
+  .card-content.with-side-panel {
+    padding-right: 300px;
+  }
+
+  .side-panel {
+    display: block;
+    width: 300px;
+    border-left: 1px solid lightgray;
+  }
+}
